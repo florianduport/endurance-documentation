@@ -34,6 +34,9 @@
  * and scoped locally.
  */
 
+ .container{
+  z-index: 99;
+ }
  
 
  .second-row{
