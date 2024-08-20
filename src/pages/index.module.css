@@ -1,0 +1,60 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  padding: 0;
+  text-align: left;
+  color: #fff;
+  min-height: 700px;
+}
+.second-row{
+  min-height: 300px;
+}
+
+.heroBanner, .second-row, .second-row {
+  position: relative;
+  background-image: url('/img/space-background3.jpg') !important; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.heroBanner::before, .second-row::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.heroBanner {
+  text-align: center;
+  padding: 4rem 0;
+  color: white;
+  z-index: 1;
+}
+
+.second-row {
+  text-align: center;
+  padding: 2rem 0;
+  color: white;
+  z-index: 1;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.container{
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+
