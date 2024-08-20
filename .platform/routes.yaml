@@ -1,11 +1,9 @@
-"https://{default}/":
-    type: upstream
-    upstream: "endurance-documentation:http"
-"https://www.{default}/":
-    type: redirect
-    to: "https://{default}/"
-"https://{default}/socket.io":
-    type: upstream
-    upstream: "endurance-documentation:http"
-    cache:
-        enabled: false
+"https://endurancejs.com/":
+  type: upstream
+  upstream: "endurance-documentation:http"
+"https://www.endurancejs.com/":
+  type: redirect
+  to: "https://endurancejs.com/"
+"http://{default}/":
+  type: redirect
+  to: "https://{default}/"
