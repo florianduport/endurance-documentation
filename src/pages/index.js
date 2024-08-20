@@ -37,7 +37,7 @@ export default function Home() {
       <HomepageHeader />
       <main>
         <HomepageFeatures />
-        <div class="second-row">&nbsp;</div>
+        <div className="second-row">&nbsp;</div>
       </main>
     </Layout>
   );
