@@ -4,8 +4,8 @@ type: nodejs:18
 
 disk: 512
 resources:
-    base_memory: 768
-    memory_ratio: 768
+    base_memory: 614
+    memory_ratio: 614
 
 mounts:
     ".docusaurus": "shared:files/.docusaurus"
