@@ -7,9 +7,13 @@ resources:
     base_memory: 1024
     memory_ratio: 1024
 
+mounts:
+    ".docusaurus": "shared:files/.docusaurus"
+
 web:
     commands:
         start: "npm start"
     locations:
         /img:
             passthru: true
+
