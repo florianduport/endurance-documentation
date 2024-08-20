@@ -1,0 +1,15 @@
+name: endurance-documentation
+
+type: nodejs:18
+
+disk: 512
+resources:
+    base_memory: 1024
+    memory_ratio: 1024
+
+web:
+    commands:
+        start: "npm start"
+    locations:
+        /img:
+            passthru: true
