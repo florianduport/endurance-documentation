@@ -17,7 +17,7 @@ cd my-project
 touch .env
 ```
 
-Now, some environment variables are already required (or optionnal) to work with Endurance. To list them, you can use the command : 
+Some environment variables are already required (or optionnal) to work with Endurance. To list them, you can use the command : 
 
 ```
 endurance list-env-vars
@@ -29,5 +29,5 @@ You'll be able to enter a value in your .env file for all environment variables 
 Database related variables are optional as the API can work without a model if necessary. 
 
 
-
+Once your .env file is ready the configuration is all set.
 

@@ -37,3 +37,6 @@ npm start
 ```
 
 Open your web browser at `http://localhost:3000`. Oh wait, it's an API not a website so there's not much to see here. But you can check your API swagger here : `http://localhost:3000/api-docs`
+
+
+PS : You can also choose to start it through a Docker container using the available Dockerfile.
