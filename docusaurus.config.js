@@ -9,7 +9,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Endurance Framework',
-  tagline: 'Easy module based framework for building NodeJS web APIs',
+  tagline: 'Easy module-based framework for building NodeJS web APIs',
   favicon: 'img/space-station-white.ico',
 
   // Set the production url of your site here
