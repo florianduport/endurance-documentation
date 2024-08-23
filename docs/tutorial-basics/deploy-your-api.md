@@ -6,7 +6,7 @@ sidebar_position: 5
 
 Deploying your API is easy. To run the application in production mode use: 
 
-```
+```bash
 npm run prod
 ```
 

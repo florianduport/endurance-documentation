@@ -8,14 +8,14 @@ A listener is able to trigger an action when an internal event is emitted. The e
 
 You can list all available events by using the command 
 
-```
+```bash
 endurance list-events
 ```
 
 ## Create a listener 
 
 
-```
+```js
 const listener = require('endurance-core/lib/listener');
 const Webhook = require('../models/webhook.model');
 
@@ -30,7 +30,7 @@ module.exports = listener;
 
 You can also create a listener to listen to any event in the app. This must be avoided except for specific needs like this case : 
 
-```
+```js
 listener.createAnyListener(async (event, data) => {
     console.log(`Event received: ${event}`);
     try {

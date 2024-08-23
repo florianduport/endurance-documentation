@@ -17,7 +17,7 @@ If your API is composed of 2 or more modules : Modules mustn't share any dependa
 
 Once the new project installation is complete (see installation documentation) :
 
-```
+```bash
 cd my-project
 endurance new-module {module-name}
 ```

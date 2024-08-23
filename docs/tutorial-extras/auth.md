@@ -22,7 +22,7 @@ Create a xxx.middleware.js file.
 
 The auth middleware will have to provide all the implentation for the app lib to use : 
 
-```
+```js
 const auth = require('endurance-core/lib/auth');
 auth.initializeAuth({
   getUserById: getUserByIdOrEmail,
@@ -37,7 +37,7 @@ auth.initializeAuth({
 
 Complete example : 
 
-```
+```js
 const User = require('../models/user.model');
 const auth = require('endurance-core/lib/auth');
 

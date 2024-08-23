@@ -12,14 +12,14 @@ A .env file is necessary to hold all the environment variables for your project 
 
 Create an .env file (linux on macOS) :
 
-```
+```bash
 cd my-project
 touch .env
 ```
 
 Some environment variables are already required (or optionnal) to work with Endurance. To list them, you can use the command : 
 
-```
+```bash
 endurance list-env-vars
 ```
 

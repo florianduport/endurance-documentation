@@ -8,7 +8,7 @@ A CRON is a process that will be launched in a specific time
 
 You can create a "crons" folder in your module and a "xxx.cron.js" file. 
 
-```
+```js
 const { loadCronJob } = require('endurance-core/lib/cron');
 const Report = require('../models/report.model');
 
