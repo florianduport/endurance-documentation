@@ -76,6 +76,7 @@ const config = {
             label: 'Documentation',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
+          {to: 'https://chatgpt.com/g/g-nSGsf6hh5-endurance-gpt', label: 'Custom GPT', position: 'left'},
           {
             href: 'https://github.com/florianduport/endurance',
             label: 'GitHub',
