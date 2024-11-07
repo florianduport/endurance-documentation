@@ -16,16 +16,17 @@ endurance list-events
 
 
 ```js
-const listener = require('endurance-core/lib/listener');
-const Webhook = require('../models/webhook.model');
+import listener from 'endurance-core/lib/listener.js';
+import { emitter, eventTypes } from 'endurance-core/lib/emitter.js';
+import Webhook from '../models/Webhook.model.js';
 
-listener.createListener('WEBHOOK_REGISTERED', (data) => {
+listener.createListener(eventTypes.WEBHOOK_REGISTERED, (data) => {
     console.log('Webhook registered:', data);
 });
 
 console.log('Webhook listener initialized');
 
-module.exports = listener;
+export default listener;
 ```
 
 You can also create a listener to listen to any event in the app. This must be avoided except for specific needs like this case : 

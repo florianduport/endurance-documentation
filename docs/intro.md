@@ -25,6 +25,7 @@ Create your git repository, then :
 ```bash
 cd my-project
 endurance new-project
+npm install
 ```
 
 If endurance is not installed in your path and is not recognized, try `npx endurance new` instead.

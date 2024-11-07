@@ -12,7 +12,8 @@ If you are already familiar with Express and NodeJS, this will be plain simple.
 First, we need to initiate a new router object like this : 
 
 ```js
-const router = require('endurance-core/lib/router')({requireDb: false});
+import routerBase from 'endurance-core/lib/router.js';
+const router = routerBase();
 ```
 
 ## Add routes 
@@ -35,7 +36,8 @@ First, we need to change to requireDb : true. Then :
 
 
 ```js
-const router = require('endurance-core/lib/router')({requireDb: true});
+import routerBase from 'endurance-core/lib/router.js';
+const router = routerBase();
 
 router.autoWire(ModelName, 'ModelName', restrictAccess);
 ```
@@ -55,9 +57,11 @@ const restrictkAccess = {
 Here's the final example to autoWire a Webhook Model : 
 
 ```js
-const router = require('endurance-core/lib/router')({ requireDb: true });
-const Webhook = require('../models/webhook.model');
-const auth = require('endurance-core/lib/auth');
+import routerBase from 'endurance-core/lib/router.js';
+const router = routerBase();
+
+import Webhook from '../models/Webhook.model.js';
+import auth  from 'endurance-core/lib/auth.js';
 
 const restrictAccess = {
   checkUserPermissions: auth.checkUserPermissions(['canManageWebhooks']),
@@ -66,7 +70,7 @@ const restrictAccess = {
 
 router.autoWire(Webhook, 'Webhook', restrictAccess);
 
-module.exports = router;
+export default router;
 
 ```
 
