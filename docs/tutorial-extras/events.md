@@ -9,7 +9,7 @@ Events are internal events that a module listener can listen.
 You can emit events anytime in your application 
 
 ```js
-const { emitter, eventTypes } = require('endurance-core/lib/emitter');
+import { emitter, eventTypes } from 'endurance-core/lib/emitter.js';
 
 emitter.emit(eventTypes.ORDER_CREATED, newOrder);
 ```

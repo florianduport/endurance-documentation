@@ -9,8 +9,8 @@ A consumer is the listener of external queuing systems like AMQP or Kafka (curre
 To create a new consumer, you must create a "consumers" folder and a xxx.consumer.js file. 
 
 ```js
-const consumer = require('endurance-core/lib/consumer')();
-const Order = require('../models/order.model');
+import consumer from 'endurance-core/lib/consumer.js';
+import Order from '../models/order.model.js';
 
 const processAmqpMessage = async (msg) => {
   try {
@@ -46,4 +46,6 @@ const processKafkaMessage = async (message) => {
 consumer.createConsumer('amqp', { queue: 'orderQueue' }, processAmqpMessage);
 
 consumer.createConsumer('kafka', { topic: 'orderTopic', groupId: 'orderServiceGroup' }, processKafkaMessage);
+
+export default {};
 ```

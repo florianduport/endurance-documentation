@@ -46,7 +46,7 @@ restrictAccess is an optionnal parameter that is an object composed 2 functions 
 So lets add : 
 
 ```js
-const auth = require('endurance-core/lib/auth');
+import auth from 'endurance-core/lib/auth.js';
 
 const restrictkAccess = {
   checkUserPermissions: auth.checkUserPermissions(['canManageModelObjects']), 

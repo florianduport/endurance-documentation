@@ -23,7 +23,8 @@ Create a xxx.middleware.js file.
 The auth middleware will have to provide all the implentation for the app lib to use : 
 
 ```js
-const auth = require('endurance-core/lib/auth');
+import auth from 'endurance-core/lib/auth.js';
+
 auth.initializeAuth({
   getUserById: getUserByIdOrEmail,
   validatePassword: validateUserPassword,
@@ -38,8 +39,8 @@ auth.initializeAuth({
 Complete example : 
 
 ```js
-const User = require('../models/user.model');
-const auth = require('endurance-core/lib/auth');
+import auth from 'endurance-core/lib/auth.js';
+import User from '../models/user.model.js';
 
 const getUserByIdOrEmail = async (idOrEmail) => {
   if (typeof idOrEmail === 'object' && idOrEmail.email) {
